@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project001</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @font-face {
+	            font-family: 'BigBlueTerm'; 
+	            src: url(/fonts/BigBlueTermPlusNerdFont-Regular.ttf); 
+            }
+            .main{
+                border: 5px solid #000;
+                max-width: 1000px;
+                margin: 300px auto;
+                margin-bottom: 10px;
+                padding: 5px;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .main h1{
+                font-family: BigBlueTerm;
+                text-align: center;
+            }
+            .main p{
+                font-family: "Comic Sans MS";
+                font-size: 25px;
+            }
+            .split-container {
+                display: flex;
+                gap: 5px;
+                justify-content: space-between;
+                margin-top: 5px;
+            }
+            .split-section {
+                flex: 1;
+                border: 5px solid #000;
+                padding: 10px;
+                padding-left: 30px;
+            }
+            img{
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main" style="padding: 5px;">
+            <div class="main" style="margin: 0px; margin-bottom: 5px;">
+                <p style="font-size: 150px; margin: 0px; margin-left: 50px; font-family: bahnschrift;">onecodeme</p>
+            </div>
+            <div class="main" style="margin: 0px;">
+                <h1>Ну привет.<br> Что же тебя привело сюда?</h1>
+            </div>
+            <div class="split-container">
+                <div class="split-section" style="flex: 2">
+                    <p>Меня зовут Тихон. По интересам я системный администратор, но в свободное время смотрю видео. Люблю настраивать серверы, экспериментировать с кодом и создавать что-то новое.</p>
+                </div>
+                <div class="split-section" style="flex: 1">
+                    <p style="margin-top: -3px; font-family: 'Cascadia mono';">Ссылки</p>
+                    <p><a href="https://github.com/onecodeme"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png">GitHub</a>
+                    <br>
+                    <a href="https://t.me/onecodeme"><img src="https://static.vecteezy.com/system/resources/previews/023/986/534/large_2x/telegram-logo-telegram-logo-transparent-telegram-icon-transparent-free-free-png.png">Telegram</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
