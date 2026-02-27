@@ -1,0 +1,64 @@
+body {
+    background-color: blue;
+}
+.main-container {
+    border: 5px ridge #ffffff;
+    max-width: 1000px;
+    margin: 300px auto;
+    margin-bottom: 0;
+    padding: 5px;
+    padding-bottom: 0px;
+    color: #ffffff;
+}
+
+.part {
+    border: 5px ridge #ffffff;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 5px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#header-text {
+    font-family: bahnschrift;
+    font-size: 150px;
+}
+
+#header-text p {
+    margin: 0px;
+}
+
+.base-container {
+    display: flex;
+    gap: 5px;
+}
+
+.split-container {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+#biography {
+    flex: 2;
+    font-family: "Comic Sans MS";
+    font-size: 25px;
+    text-align: left;
+}
+
+#links {
+    flex: 1;
+    font-size: 25px;
+    text-align: left;
+}
+
+.logo {
+    height: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
