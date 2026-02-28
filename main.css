@@ -62,3 +62,22 @@ a{
     text-decoration: none;
     color: #ffffff;
 }
+@media (max-width: 768px) {
+        
+    .main-container {
+        margin: 10px auto;
+        padding: 8px;
+    }
+
+    .base-container {
+        flex-direction: column; /* колонки становятся вертикальными */
+    }
+
+    .split-container {
+        padding-left: 10px;
+    }
+
+    #Question h1 {
+    font-size: 24px;
+    }
+}
