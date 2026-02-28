@@ -1,6 +1,10 @@
+@font-face {
+    font-family: 'BigBlueTermPlus Nerd Font';
+    src: url('fonts/BigBlueTermPlusNerdFont-Regular.ttf') format('truetype');
+}
+
 body {
     background-color: blue;
-    src: url(/fonts/BigBlueTermPlusNerdFont-Regular.ttf);
 }
 .main-container {
     border: 5px ridge #ffffff;
@@ -84,6 +88,10 @@ a{
 .header p {
     margin: 10px; 
     font-family: 'BigBlueTermPlus Nerd Font'; 
+}
+
+.header li a {
+    color: inherit;
 }
 
 .disabled {
