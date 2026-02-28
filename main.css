@@ -1,5 +1,6 @@
 body {
     background-color: blue;
+    src: url(/fonts/BigBlueTermPlusNerdFont-Regular.ttf);
 }
 .main-container {
     border: 5px ridge #ffffff;
@@ -41,6 +42,10 @@ body {
     padding-left: 30px;
 }
 
+#Question {
+    font-family: 'BigBlueTermPlus Nerd Font';
+}
+
 #biography {
     flex: 2;
     font-family: "Comic Sans MS";
@@ -62,6 +67,43 @@ a{
     text-decoration: none;
     color: #ffffff;
 }
+
+.header ul {
+    list-style: none;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+.header li {
+    float: left;
+    border: 5px ridge white;
+    border-bottom: none;
+    margin-right: 5px;
+}
+
+.header p {
+    margin: 10px; 
+    font-family: 'BigBlueTermPlus Nerd Font'; 
+}
+
+.disabled {
+    font-weight: bold;
+    background-color: white;
+    color: blue;
+    pointer-events: none;
+}
+
+.button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: blue;
+}
+
+#tracks {
+    height: 300px;
+    overflow-y: auto;
+}
+
 @media (max-width: 768px) {
         
     .main-container {
