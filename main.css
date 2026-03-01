@@ -18,25 +18,36 @@
     src: url('fonts/CascadiaMono-Regular.ttf') format('truetype');
 }
 
-body {
-    background-color: blue;
+:root{
+    --background: blue;
+    --foreground: white;
 }
+
+:root[theme='fixed'] {
+    --background: #102419;
+    --foreground: #9FE8C1;
+}
+
+body {
+    background-color: var(--background);
+}
+
 .main-container {
-    border: 5px ridge #ffffff;
+    border: 5px ridge var(--foreground);
     max-width: 1000px;
     margin: 300px auto;
     margin-bottom: 0;
     padding: 5px;
     padding-bottom: 0px;
-    color: #ffffff;
+    color: var(--foreground);
 }
 
 .part {
-    border: 5px ridge #ffffff;
+    border: 5px ridge var(--foreground);
     margin: 0;
     margin-bottom: 5px;
     padding: 5px;
-    color: #ffffff;
+    color: var(--foreground);
     text-align: center;
 }
 
@@ -84,7 +95,7 @@ body {
 
 a{
     text-decoration: none;
-    color: #ffffff;
+    color: var(--foreground);
 }
 
 .header ul {
@@ -95,7 +106,7 @@ a{
 
 .header li {
     float: left;
-    border: 5px ridge white;
+    border: 5px ridge var(--foreground);
     border-bottom: none;
     margin-right: 5px;
 }
@@ -111,20 +122,27 @@ a{
 
 .disabled {
     font-weight: bold;
-    background-color: white;
-    color: blue;
+    background-color: var(--foreground);
+    color: var(--background);
     pointer-events: none;
 }
 
 .button:hover {
-    background-color: white;
+    background-color: var(--foreground);
     cursor: pointer;
-    color: blue;
+    color: var(--background);
 }
 
 #tracks {
     height: 300px;
     overflow-y: auto;
+}
+
+.toggle-theme {
+    margin-top: 10px;
+    background-color: var(--foreground);
+    border: 5px ridge var(--foreground);
+    padding: 5px;
 }
 
 @media (max-width: 768px) {
